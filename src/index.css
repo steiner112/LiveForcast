@@ -1,0 +1,169 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  /* background-image: url(https://cdn.pixabay.com/photo/2016/08/02/07/45/the-angular-1562743_1280.jpg); */
+  background-color:  #FFFAF0;
+  background-size: cover;
+  background-position: center;
+  image-resolution: 100%;
+}
+
+header{
+  position: relative;
+}
+main{
+  position: relative;
+}
+footer{
+  position: relative;
+  object-fit: contain;
+}
+
+
+
+/* ......................  */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* media que...  */
+
+@media screen and (max-width : 1100px) {
+  #box{
+    width: 80%;
+  }
+  
+}
+@media screen and (max-width : 790px) {
+  #box{
+    width: 90%;
+  }
+  /* navbar  */
+
+  #navbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+  
+#dropdown {
+  position: relative;
+  display: none;
+  width: 100vw;
+  padding: 2px;
+  top: 120%;
+  animation: 1s ease;
+  animation-name: navbar1;
+  list-style-type: none;
+  z-index: 1;
+  background-color: #282c34;
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  min-width: 20vmin;
+  padding: 2px;
+  top: 120%;
+  animation: 1s ease;
+  list-style-type: none;
+  z-index: 1;
+}
+
+#dropdown a li:hover {
+  color: orange;
+  text-decoration: line-through black;
+ 
+
+
+}
+
+
+#dropdown a {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 10px;
+  /* font  */
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 3.6vmin;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+}
+
+@media screen and (max-width : 500px) {
+  #box{
+    width: 90%;
+    height: 40vh;
+  }
+  
+}
+
+
+
+#textabout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 95vh;
+  font-size: 2vmin;
+}
+
+#ab{
+  position: relative;
+  top: 10%;
+}
+
+/* ...............................  weather */
+
+
+
+

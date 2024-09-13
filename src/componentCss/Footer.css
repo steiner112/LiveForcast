@@ -1,0 +1,12 @@
+.footer a {
+    color: #000;
+    padding: 10px;
+  }
+  #icon a{
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-property: all;
+  }
+  #icon a:hover{
+    opacity: 0.5;
+  }

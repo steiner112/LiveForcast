@@ -1,0 +1,146 @@
+#navbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#outline {
+    position: relative;
+    left: 10px;
+    width: 44.28px;
+    height: 44.28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#outline div {
+    position: absolute;
+    width: 36px;
+    height: 3.5px;
+    background-color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+#line1 {
+    top: 30%;
+}
+
+#line2 {
+    top: 50%;
+}
+
+#line4 {
+    top: 70%;
+}
+
+.line1 {
+    transform: translateY(8.5px)rotateZ(45deg);
+
+}
+
+.line4 {
+    transform: translateY(-8.5px)rotateZ(-45deg);
+}
+
+.line2 {
+    transform: rotateZ(45deg);
+    opacity: 0.4;
+}
+
+#dropdown {
+    position: absolute;
+    display: none;
+    min-width: 20vmin;
+    padding: 2px;
+    top: 120%;
+    animation: 1s ease;
+    animation-name: navbar1;
+    list-style-type: none;
+    z-index: 1;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    min-width: 20vmin;
+    padding: 2px;
+    top: 120%;
+    animation: 1s ease;
+    list-style-type: none;
+    z-index: 1;
+}
+
+#dropdown a li:hover {
+    color: orange;
+    text-decoration: line-through black;
+   
+
+
+}
+
+@keyframes text {
+    0% {
+        color: #8A3FFC;
+    }
+
+    20% {
+        color: #3AC1EF;
+    }
+
+    40% {
+        color: #F7B32B;
+    }
+
+    60% {
+        color: #F22A7D;
+    }
+
+    80% {
+        color: #8A3FFC;
+    }
+
+    100% {
+        color: #8A3FFC;
+    }
+
+}
+
+#dropdown li {
+    margin: 5px;
+    transition: all 0.4s ease;
+    animation: text 6s ease infinite;
+}
+
+@keyframes navbar1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Lexend:wght@100..900&family=Quicksand:wght@300&display=swap');
+
+#dropdown a {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px;
+    /* font  */
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 3.6vmin;
+    text-transform: uppercase;
+    text-decoration: none;
+}

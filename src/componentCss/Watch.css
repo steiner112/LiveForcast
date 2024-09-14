@@ -1,16 +1,7 @@
-/* .................css.........  */
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
-main {
-  position: relative;
-  width: 100%;
-  height: 95vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* .................css.........  */
 /* .................watch-box........... */
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 #box {
   border-radius: 30%;
   position: relative;
@@ -163,7 +154,6 @@ main {
 
 #start {
   position: relative;
-  width: 100vw;
 }
 
 #search-bar {
@@ -176,16 +166,26 @@ main {
 
 #search-bar input {
   height: 8vh;
-  border-radius: 40px;
   outline: none;
   padding-left: 25px;
   color: #626262;
   background: #ebfffc;
   border: none;
   font-size: 3.2vmin;
+  opacity: 0.8;
+  border-radius: 40px;
   width: 60%; /* Dynamic width for better responsiveness */
   max-width: 400px; /* Restrict max width on larger screens */
+}
+
+#search-bar {
+  opacity: 0.8;
+  border-radius: 40px;
+  min-width: 20vw;
+  background-color: #ebfffc;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  border: none;
+  outline: none;
 }
 
 input::-webkit-search-cancel-button {
@@ -193,17 +193,14 @@ input::-webkit-search-cancel-button {
 }
 
 #search-bar img {
-  width: 50px;
-  padding: 15px;
+  width: 30px;
   background-color: #ebfffc;
   cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   transition: transform 0.2s ease; /* Smooth animation */
 }
 
 #search-bar img:hover {
-  transform: scale(1.1); /* Image grows slightly on hover */
+  transform: scale(0.8); /* Image grows slightly on hover */
 }
 
 .weather-data {
@@ -223,9 +220,12 @@ input::-webkit-search-cancel-button {
   padding: 10px; /* Add spacing around each column */
   text-align: center; /* Center align text */
 }
+.col img {
+  width: 5vmin;
+}
 
 .weather-data img.weather-icon {
-  width: 100px; /* Set a consistent size for weather icons */
+  width: 140px; /* Set a consistent size for weather icons */
 }
 
 .temp {
@@ -255,4 +255,20 @@ input::-webkit-search-cancel-button {
 .error-message {
   position: absolute;
   top: 30%;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+input:focus {
+  opacity: 1;
+}
+
+#search-bar:hover {
+  opacity: 1;
+}
+
+#search-bar:focus {
+  opacity: 1;
 }/*# sourceMappingURL=Watch.css.map */

@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
 // icon imports
-import search_icon from '../assets/search.png';
+import search_icon from '../assets/search.svg';
+import rainThund_icon from '../assets/rainThunder.png';
 import clear_icon from '../assets/clear.png';
+import clearN_icon from '../assets/full-moon.png';
 import cloud_icon from '../assets/cloud.png';
+import cloudN_icon from '../assets/cloudy-night.png';
+import cloudO_icon from '../assets/cloudO.png';
 import drizzle_icon from '../assets/drizzle.png';
-import humidity_icon from '../assets/humidity.png';
+import drizzleN_icon from '../assets/rainy-night.png';
+import humidity_icon from '../assets/humidity.svg';
 import rain_icon from '../assets/rain.png';
+import rainN_icon from '../assets/rainNight.svg';
 import snow_icon from '../assets/snow.png';
-import wind_icon from '../assets/wind.png';
+import snowN_icon from '../assets/night-snow.png';
+import wind_icon from '../assets/wind.svg';
 
 function Weather() {
   const [weatherData, setWeatherData] = useState(null); // Initialize with null
@@ -17,19 +24,21 @@ function Weather() {
 
   const allicons = {
     '01d': clear_icon,
-    '01n': clear_icon,
+    '01n': clearN_icon,
     '02d': cloud_icon,
-    '02n': cloud_icon,
-    '03d': cloud_icon,
-    '03n': cloud_icon,
-    '04d': drizzle_icon,
+    '02n': cloudN_icon,
+    '03d': cloudO_icon,
+    '03n': cloudO_icon,
+    '04d': drizzleN_icon,
     '04n': drizzle_icon,
     '09d': rain_icon,
-    '09n': rain_icon,
+    '09n': rainN_icon,
     '10d': rain_icon,
-    '10n': rain_icon,
+    '10n': rainN_icon,
+    '11d': rainThund_icon,
+    '11n': rainThund_icon,
     '13d': snow_icon,
-    '13n': snow_icon,
+    '13n': snowN_icon,
   };
 
   useEffect(() => {
